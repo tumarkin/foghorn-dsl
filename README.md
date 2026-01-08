@@ -389,7 +389,8 @@ industryTotal = totalOfGroupBy_ dealValue [industryCode, fyear]
 
 ## Documentation
 
-In-source Haddock comments document all public functions. To build HTML docs:
+- [Online **Haddock** documentation](https://tumarkin.github.io/foghorn-dsl)
+- In-source Haddock comments document all public functions. To build HTML docs:
 
 ```bash
 cabal haddock --enable-documentation \
