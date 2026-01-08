@@ -1,0 +1,104 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.38.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           foghorn-dsl
+version:        0.1.0.0
+author:         Robert Tumarkin
+maintainer:     https://github.com/tumarkin
+build-type:     Simple
+extra-source-files:
+    CHANGELOG.md
+
+library
+  exposed-modules:
+      Foghorn.Dsl
+      Foghorn.Dsl.Algebra
+      Foghorn.Dsl.Algebra.Exorcism
+      Foghorn.Dsl.Algebra.Operations
+      Foghorn.Dsl.Algebra.Var
+      Foghorn.Dsl.Algebra.Var.Internal
+      Foghorn.Dsl.Codegen
+      Foghorn.Dsl.Estimator
+      Foghorn.Dsl.Estimator.Reg
+      Foghorn.Dsl.Estimator.RegHdFe
+      Foghorn.Dsl.Internal.Text
+      Foghorn.Dsl.Internal.TH
+      Foghorn.Dsl.Interpreter
+      Foghorn.Dsl.Interpreter.ModelNames
+      Foghorn.Dsl.Interpreter.VariablesUsed
+      Foghorn.Dsl.Language
+      Foghorn.Dsl.Language.Quote
+      Foghorn.Dsl.Language.Quote.Parser
+      Foghorn.Dsl.Language.Statement
+      Foghorn.Dsl.Language.Types
+      Foghorn.Dsl.Language.Types.Spec.Core
+      Foghorn.Dsl.Language.Types.Spec.Estimator
+      Foghorn.Dsl.Language.Types.Spec.Lenses
+      Foghorn.Dsl.Language.Types.SpecVar
+  other-modules:
+      Paths_foghorn_dsl
+  hs-source-dirs:
+      src
+  default-extensions:
+      BangPatterns
+      BinaryLiterals
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveDataTypeable
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveTraversable
+      DoAndIfThenElse
+      EmptyDataDecls
+      ExistentialQuantification
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      GeneralizedNewtypeDeriving
+      InstanceSigs
+      KindSignatures
+      LambdaCase
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      NoFieldSelectors
+      NoImplicitPrelude
+      OverloadedStrings
+      OverloadedRecordDot
+      PartialTypeSignatures
+      PatternGuards
+      PolyKinds
+      QuasiQuotes
+      RankNTypes
+      RecordWildCards
+      ScopedTypeVariables
+      StandaloneDeriving
+      TemplateHaskell
+      TupleSections
+      TypeApplications
+      TypeFamilies
+      TypeOperators
+      TypeSynonymInstances
+      ViewPatterns
+  build-depends:
+      base
+    , bifunctors
+    , effectful
+    , effectful-th
+    , filepath
+    , foghorn-base
+    , megaparsec
+    , microlens
+    , neat-interpolation
+    , parser-combinators >=1.3.0 && <1.4
+    , relude
+    , singletons
+    , singletons-base
+    , template-haskell
+  default-language: Haskell2010
