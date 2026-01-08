@@ -1,0 +1,81 @@
+name:               foghorn-dsl
+version:            0.1.0.0
+language:           Haskell2010
+
+author:             Robert Tumarkin
+maintainer:         https://github.com/tumarkin
+
+# synopsis:
+# description:
+# category:
+
+# license:
+# copyright:
+
+extra-source-files: CHANGELOG.md
+# bug-reports:
+ 
+library:
+  source-dirs: src
+
+dependencies:
+  # - base >=4.16.4.0 && <4.17
+  - base
+  - bifunctors
+  - effectful
+  - effectful-th
+  - filepath
+  - megaparsec
+  - microlens
+  - neat-interpolation
+  - parser-combinators ^>= 1.3.0
+  - relude
+  - singletons
+  - singletons-base
+  - template-haskell
+  - foghorn-base
+
+default-extensions:
+  - BangPatterns
+  - BinaryLiterals
+  - ConstraintKinds
+  - DataKinds
+  - DefaultSignatures
+  - DeriveDataTypeable
+  - DeriveFoldable
+  - DeriveFunctor
+  - DeriveGeneric
+  - DeriveTraversable
+  - DoAndIfThenElse
+  - EmptyDataDecls
+  - ExistentialQuantification
+  - FlexibleContexts
+  - FlexibleInstances
+  - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - InstanceSigs
+  - KindSignatures
+  - LambdaCase
+  - MultiParamTypeClasses
+  - MultiWayIf
+  - NamedFieldPuns
+  - NoFieldSelectors
+  - NoImplicitPrelude
+  - OverloadedStrings
+  - OverloadedRecordDot
+  - PartialTypeSignatures
+  - PatternGuards
+  - PolyKinds
+  - QuasiQuotes
+  - RankNTypes
+  - RecordWildCards
+  - ScopedTypeVariables
+  - StandaloneDeriving
+  - TemplateHaskell
+  - TupleSections
+  - TypeApplications
+  - TypeFamilies
+  - TypeOperators
+  - TypeSynonymInstances
+  - ViewPatterns
